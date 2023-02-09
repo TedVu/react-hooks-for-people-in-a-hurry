@@ -1,5 +1,15 @@
+import React, { useState } from "react";
+
 function UseStateHooks() {
-  return <h1>Use State Hooks</h1>;
+  const [count, setCount] = useState(0);
+
+  return (
+    <div style={{ textAlign: "center" }}>
+      {" "}
+      <h1>{count}</h1>
+      <button>CLICK</button>
+    </div>
+  );
 }
 
 export default UseStateHooks;
