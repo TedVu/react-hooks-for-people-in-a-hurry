@@ -7,7 +7,22 @@ function UseStateHooks() {
     <div style={{ textAlign: "center" }}>
       {" "}
       <h1>{count}</h1>
-      <button>CLICK</button>
+      <button
+        style={{ margin: "1rem" }}
+        onClick={() => {
+          setCount(count + 1);
+        }}
+      >
+        Increase
+      </button>
+      <button
+        style={{ margin: "1rem" }}
+        onClick={() => {
+          setCount(count - 1);
+        }}
+      >
+        Decrease
+      </button>
     </div>
   );
 }
