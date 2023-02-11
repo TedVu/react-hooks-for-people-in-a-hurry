@@ -5,6 +5,7 @@ import "./index.css";
 import UseStateHooks from "./hooks/UseStateHooks";
 import UseEffectHooks from "./hooks/UseEffectHooks";
 import UseRefHooks from "./hooks/UseRefHooks";
+import UseContextHooks from "./hooks/UseContextHooks";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: "/useref",
     element: <UseRefHooks />,
+  },
+  {
+    path: "/usecontext",
+    element: <UseContextHooks />,
   },
 ]);
 
