@@ -1,5 +1,15 @@
+import { useRef } from "react";
 function UseRefHooks() {
-  return <h1>Use Ref Hooks</h1>;
+  const inputElement = useRef();
+  const focusInput = () => {
+    inputElement.current.focus();
+  };
+  return (
+    <>
+      <input type="text" ref={inputElement} />
+      <button onClick={focusInput}>Focus Input</button>
+    </>
+  );
 }
 
 export default UseRefHooks;
