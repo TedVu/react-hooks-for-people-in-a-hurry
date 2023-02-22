@@ -5,10 +5,10 @@ function UseRefHooks() {
     inputElement.current.focus();
   };
   return (
-    <>
+    <div style={{ textAlign: "center", margin: "5rem" }}>
       <input type="text" ref={inputElement} />
       <button onClick={focusInput}>Focus Input</button>
-    </>
+    </div>
   );
 }
 
