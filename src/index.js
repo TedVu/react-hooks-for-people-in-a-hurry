@@ -28,6 +28,10 @@ const router = createBrowserRouter([
     path: "/usecontext",
     element: <UseContextHooks />,
   },
+  {
+    path: "/usememo",
+    element: <UseContextHooks />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
